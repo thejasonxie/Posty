@@ -35,6 +35,9 @@
               <p class="mb-2">{{ $post->body }}</p>
             </div>
         @endforeach
+        <div>
+          {{ $posts->links("pagination::tailwind") }}
+        </div>
       @else
         <p>There are no posts</p>
       @endif
